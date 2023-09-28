@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #000!important;
+    color: #fff!important;
+}
+
+.height{
+    height: 100vh;
+}
+
+.outer{
+    width: 100%;
+    height:100vh;
+    background-image: 
+    /* linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), */
+     url(../images/header-image.jpg);
+     /* ); */
+    background-repeat: no-repeat;    
+    background-position: center;   
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.netflix{
+    width: 15%;
+
+}
+
+.netflix:hover{ 
+    cursor: pointer;  
+}
+
+nav button{
+    padding: 8px 17px;
+    color: #fff;
+    background-color: rgb(202, 8, 8);
+    outline: 0;
+    border: 0;
+    font-size: 13px;
+    border-radius: 5px;
+    margin-left: 1vw;
+}
+
+.form-1{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    text-align: center; 
+    /* transform: translate(-50%, -50%); */
+}
+
+.form-1 h1{
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.form-1 p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.form-1 h4{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.email-form .email{
+    color: #fff;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 15px 15px;
+    width: 27vw;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+}
+
+.email-form button{
+    /* padding: 15px 15px; */
+    position: relative;
+    padding: 13.5px 15px;
+    color: #fff;
+    background-color: rgb(202, 8, 8);
+    outline: 0;
+    border: 0;
+    width: 14vw;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-left: 0.25vw;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* .drop{
+    background: transparent; 
+    /* linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)); */
+    /* width: 3%;
+    border-radius: 10px;
+    position: absolute;
+    top: 11%;
+    left: 81%;
+} */ 
+
+
+/* ---------------------features---------------------------------- */
+.height-70{
+    min-height: 70vh;
+}
+.row{
+    display: flex;
+    align-items: center;
+    padding-top: 10vh;
+    flex-wrap: wrap;
+}
+.img-col{
+    flex-basis: 48%;
+
+}
+.outer-2{
+    padding: 5vh 12%;
+}
+.img-size{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.img-size img{
+    /* position: relative; */
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+video{
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    width: 63%;
+    /* object-fit: cover; */
+    object-fit: fill;
+    z-index: 1;
+}
+.v2{
+    position: absolute;
+    top: 9%;
+    left: 23%;
+    width: 53%;
+}
+
+.text-col{
+    flex-basis: 50%;
+}
+.lgline{
+    width: 100%;
+    height: 5px;
+    background-color: #333!important;
+    margin-bottom: 20px;
+}
+
+.text-col h1{
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.text-col p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* ------------------------outline-3----------------------------- */
+
+
+.outer-3{
+    padding: 3vh 12%;
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.outer-3 h1{
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    
+}
+.list{
+    width: 100%;
+    /* max-width: 90%; */
+}
+.list li{
+    list-style: none;
+    width: 100%;
+}
+
+.list li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 1px;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 50px;
+    position: absolute;
+    left: 92%;
+    transition: all 0.5s ease-in-out;
+}
+input[type="radio"]{
+    display: none;
+    /* cursor: pointer; */
+}
+
+.list .content{
+    background:303030;
+    text-align: left;
+    padding: 0 20px;
+    margin: 1vh 0vh;
+    max-height: 0;
+    /* display: none; */
+    overflow: hidden;
+}
+
+.list input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    display: block;
+    padding: 30px 20px;
+    transition: all 0.5s ease-in-out;
+    background: #303030;
+}
+
+.list input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.form-2{
+    font-size: 20px;
+    margin: 2vh 2vh;
+    padding: 2vh 2vh;
+}
+
+.form-2-email{
+    margin: 3vh 5vh;
+}
+
+
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+.footer h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+} 
+.footer .col a{
+    display: block;
+    font-size: 14px;
+    /* text-decoration: none; */
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.copy{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .netflix{
+        width: 100px;
+    }
+    nav button{
+        padding: 5px 10px;
+    }
+    nav select{
+        padding: 5px 10px;
+        font-size: 5px;
+    }
+
+    nav .English{
+         padding: 4px 8px;
+    }
+    .form-1{
+        position: unset;
+        transform: none;
+        margin-top: 150px;
+    }
+    /* .form-1 h1{
+        font-size: 20px;
+    } */
+    .email-form button{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    /* .outer-2, */
+    .text-col, .img-col{
+        flex-basis: 100%!important;
+    }
+   .outer-2 h2{
+    font-size: 30px;
+   } 
+   .outer-2 h2{
+    font-size: 15px;
+   } 
+
+   .snd:nth-child(1), .fth:nth-child(1){
+    flex-direction: column-reverse;
+   }
+   .outer-2 .row{
+    padding: 10px 0;
+   }
+
+   .outer-3 h2{
+    font-size: 20px;
+   }
+    /* .drop{
+    background: transparent; 
+    /* linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)); */
+    /* width: 3%;
+    border-radius: 10px;
+    /* position: absolute; */
+    /* top: 0% !important;
+    left: 6% !important;
+    right: 100% !important;
+    bottom: 0% !important;
+    }  */
+
+   .list .content{
+    font-size: 14px;
+   }
+
+   .list li label{
+    font-size: 14px;
+    padding: 10px;
+   }
+   label::after{
+    font-size: 22px;
+   }
+   
+}
+@media only screen and (max-width: 425px){
+    .form-1 h1{
+        font-size: 30px;
+    }
+    .form-1 h4{
+        font-size: 20px;
+    }
+
+    .text-col h1{
+        font-size: 20px;
+    }
+    .text-col h4{
+        font-size: 15px;
+    }
+
+    .outer-3 h1{
+        font-size: 30px;
+    }
+}
